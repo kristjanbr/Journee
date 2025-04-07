@@ -1,0 +1,40 @@
+header {
+    font-size: 3em;
+    text-align: center;
+  }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.data{
+    text-align: center;
+    transition: 0.3s;
+    border: none;
+	background: #07999220;
+	border-radius: .5em;
+	padding: 1em;
+	color: #079992;
+    width: 85%;
+    transition: 0.5s;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 670px) {
+    .data{
+        width: 75%;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .data{
+        width: 60%;
+    }
+  }
+  
+a{
+    color: #16a085;
+}

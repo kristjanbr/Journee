@@ -1,0 +1,115 @@
+header {
+    font-size: 3em;
+    text-align: center;
+  }
+  
+#main > div{
+    margin: 1em 1em 0 1em;
+    padding: 1em 1em 0 1em;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+	border: none;
+	border-bottom: .2em solid #bdc3c7;
+    background: #bdc3c740;
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: gray;
+    width: 100%;
+    font-size: 1.2em;
+}
+input[type="submit"]{
+    width: 50%;
+}
+
+@media screen and (min-width: 670px) {
+    input {
+        width: 60%;
+    }
+    input[type="submit"]{
+        width: 30%;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    input {
+        width: 50%;
+    }
+    input[type="submit"]{
+        width: 20%;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    input {
+        width: 40%;
+    }
+    input[type="submit"]{
+        width: 10%;
+    }
+  }
+
+input:focus{
+	border-bottom: .2em solid #079992;
+	background: #07999220;
+	color: #079992;
+    transition: 0.5s;
+}
+
+.text-present {
+	border-bottom: .2em solid #079992 !important;
+	background: #07999220 !important;
+	color: #079992 !important;
+}
+
+#login{
+	border: none;
+	border-bottom: .2em solid #bdc3c7;
+    border-top: .2em solid #bdc3c7;
+    background: #bdc3c740;
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: gray;
+    width: 10em;
+    font-size: 1.2em;
+}
+
+.upload-present {
+	border-bottom: .2em solid #079992 !important;
+    border-top: .2em solid #079992 !important;
+	background: #07999220 !important;
+	color: #079992 !important;
+}
+/*  */
+#imageupload{
+    cursor: pointer;
+    border: none;
+	border-bottom: .2em solid #bdc3c7;
+    background: #bdc3c740;
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: gray;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#or{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #079992
+}
+/*  */
+.important{
+    color: red;
+    text-align: center;
+}
+p{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: #079992;
+}

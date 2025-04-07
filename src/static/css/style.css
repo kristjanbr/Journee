@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  #navbar-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+  
+  #navbar {
+    background-color: #079992;
+    font-size: 25px;
+    padding: 0.3em;
+    border-radius: 0 0 1em 1em;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+ }
+  
+  #navbar a {
+    margin: 0 0.15em;
+    padding: 0 0.2em;
+    text-decoration: none;
+    color: #ecf0f1;
+    transition: 0.4s;
+  }
+  
+  #navbar a:hover {
+    transition: 0.4s;
+    color: black;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 1;
+    user-select: none;
+  }
+  
+  #menu-links {
+    display: flex;
+    gap: 1em;
+   
+  }
+  
+  @media screen and (min-width: 900px) {
+    #navbar a {
+      margin: 0 0.8em;
+    }
+  }
+  
+  @media screen and (max-width: 670px) {
+    #navbar{
+        border-radius: 0em 1em 1em 0em;
+    }
+    #navbar-container {
+        justify-content: left;
+        }
+    #menu-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      background-color: #079992;
+      position: absolute; 
+      top: 0;
+      left: 0;
+      border-radius: 0em 0em 1em 1em;
+}
+  
+    #menu-links a {
+      padding: 0.5em;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .menu-active #menu-links {
+      display: flex;
+    }
+  }
+  
+  #notfound {
+    text-align: center;
+  }
+  
+  #notfound > h1 {
+    font-size: 10em;
+    color: #079992;
+  }
+  
+  #notfound > p {
+    font-size: 2em;
+  }
+  
+  #notfound > a {
+    font-size: 1.5em;
+    color: #079992;
+    text-decoration: none;
+  }
+  
